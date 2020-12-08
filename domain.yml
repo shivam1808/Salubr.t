@@ -1,0 +1,158 @@
+--- 
+actions: 
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_aboutgoogle
+  - utter_emergency
+  - utter_mentalhealthissues
+  - utter_mentalhealthdepressed
+  - utter_mentalhealthanxious
+  - utter_selfcheck
+  - utter_takingcareofillneg
+  - utter_symptomspos
+  - utter_symptomsneg
+  - utter_takingcareofillpos
+  - utter_hospital
+  - utter_needhosp
+  - utter_loc_vashi
+
+intents: 
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - google
+  - emergency
+  - mentalhealthdepressed
+  - mentalhealthanxious
+  - mentalhealthissues
+  - selfcheck
+  - takingcareofillneg
+  - symptomspos
+  - symptomsneg
+  - takingcareofillpos
+  - hospital
+  - needhosp
+  - loc_vashi
+
+responses: 
+  utter_aboutgoogle: 
+    - 
+      text: "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware."
+  utter_cheer_up: 
+    - 
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+      text: "Here is something to cheer you up:"
+  utter_did_that_help: 
+    - 
+      text: "Did that help you?"
+  utter_emergency: 
+    - 
+      text: "Before we get started, if you or someone else has any of these emergency warning signs of COVID-19, please call 102 to get medical care right away:"
+    -
+      text: Trouble breathing
+          Persistent (continuing) pain or pressure in the chest
+          Bluish lips or face
+          Suddenly feeling or acting confused
+          Trouble waking up or staying awake
+  utter_goodbye: 
+    - 
+      text: Bye
+  utter_greet: 
+    -
+      image: "https://i.imgur.com/kzbm98M.png"
+      text: "Before we get started, if you or someone else has any of these emergency warning signs of COVID-19, please call 102 to get medical care right away:
+        \n* Trouble breathing\n* Persistent (continuing) pain or pressure in the chest\n* Bluish lips or face\n* Suddenly feeling or acting confused\n* Trouble waking up or staying awake
+      \n\nDo you want to do a COVID-19 self-checkup or would you like to talk about mental health issues?"
+  utter_happy: 
+    - 
+      text: "Great, carry on!"
+  utter_iamabot: 
+    - 
+      text: "I am a bot, powered by Rasa."
+
+  utter_mentalhealthanxious:
+    -
+      text: "Don't worry we are here to guide you.
+First of all calm yourself. Breathe in and breathe out. Clear
+your thoughts. Think of what is happening right now. Do not let your worries 
+of the distant future bother you as of now. Attend to things you have at hand right now.
+Make an appointment to check in with otehr worries later. 
+Remind yourself that what you are facing is temporary. You will get through this
+no matter what. I believe in you. 
+Take care. "
+
+  utter_mentalhealthdepressed:
+    -
+      text: "Talk to your someone,be it a friend, family member, even a professional. Don't be afraid
+to seek therapy if it is required. But talk to someone! All of us are here for you.
+Specifically jot the feelings you are feeling and let it out. 
+Next, revisit a hobby. Sing, dance, excercise! Ask your family member or friend to help you
+or join you! Always remember to move around!!!"
+
+  utter_mentalhealthissues:
+    -
+      text: "How are you feeling now ?"
+
+  utter_selfcheck:
+    -
+      text: "Are you taking care of someone who is ill?"
+
+  utter_takingcareofillneg:
+    -
+      text: "Okay, do you have any of these symptoms?
+\n* Fever
+\n* Fatigue
+\n* A dry cough
+\n* Loss of appetite
+\n* Body aches
+\n* Shortness of breath
+\n* Mucus or phlegm
+"
+  utter_symptomspos:
+    -
+      text: "Please schedule an appointment for a COVID-19 test as soon as possible."
+
+  utter_symptomsneg:
+    -
+      text: "You seem fine. Take further precautions
+Stay at home
+Wear a mask if going outside
+Practice social distancing"
+
+  utter_takingcareofillpos:
+    -
+      text: "Please schedule an appointment for a COVID-19 test as soon as possible."
+
+  utter_hospital:
+    -
+      text: "Would you like to know about the hospitals around you?"
+
+  utter_needhosp:
+    -
+      text: "Where do you live?"
+
+  utter_loc_vashi:
+    -
+      text: "Government Hospitals:
+\n1.	NMMC General Hospital,Vashi	27899901 to 05
+\n\nPrivate Hospitals :
+2.	MGM Hospital	Vashi	2782 2203
+3.	Sterling Hospital	Vashi	27826969
+4.	Jijamata Hospital	Vashi	27664387, 27668509
+\n\nAmbulance providers in Vashi:
+1. Mahatma Gandhi Mission Trust New Bombay Hospital	Vashi	61526565
+9819460530
+2.	Hiranandani Hospital	Vashi	39199054
+3.	Sanjyoti Hospital	Vashi	9167731111"
+
+session_config: 
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
